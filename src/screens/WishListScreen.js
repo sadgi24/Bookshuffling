@@ -5,7 +5,7 @@ import BookItem from '../components/BookItem';
 
 const WishlistScreen = () => {
   const books = useSelector(state =>
-    state.books.filter(b => b.status === 'wishlist')
+    state.books.filter(b => b.status === 'WishList')
   );
 
   return (

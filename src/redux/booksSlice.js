@@ -18,11 +18,13 @@ const booksSlice = createSlice({
   initialState: initialBooks,
   reducers: {
     changeStatus: (state, action) => {
+      console.log('state', state,action.payload);
       const { id, status } = action.payload;
       const book = state.find(b => b.id === id);
       if (book) book.status = status;
     },
     removeStatus: (state, action) => {
+      console.log('status changed')
       const book = state.find(b => b.id === action.payload);
       if (book) book.status = null;
     },

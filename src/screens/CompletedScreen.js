@@ -4,14 +4,12 @@ import { useSelector } from 'react-redux';
 import BookItem from '../components/BookItem';
 
 const CompletedScreen = () => {
-  const books = useSelector(state =>
-    state.books.filter(b => b.status === 'completed')
-  );
+  const completedBooks = useSelector(state => state.books.filter(book => book.status === 'Completed'));
 
   return (
     <View style={{ flex: 1, padding: 10 }}>
       <FlatList
-        data={books}
+        data={completedBooks}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <BookItem book={item} allowDelete={true} />}
       />

@@ -5,7 +5,7 @@ import BookItem from '../components/BookItem';
 
 const ReadingScreen = () => {
   const books = useSelector(state =>
-    state.books.filter(b => b.status === 'reading')
+    state.books.filter(b => b.status === 'Reading')
   );
 
   return (

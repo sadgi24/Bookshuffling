@@ -1,12 +1,14 @@
 import React from 'react';
 import { FlatList, View, TouchableOpacity, Text } from 'react-native';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 import BookItem from '../components/BookItem';
 
 const AllBooksScreen = () => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
   const books = useSelector(state => state.books);
+
 
   return (
     <View style={{ flex: 1, padding: 10 }}>
