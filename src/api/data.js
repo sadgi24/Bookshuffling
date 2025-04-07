@@ -1,0 +1,10 @@
+export const data = [{ id: 1, title: 'Book 1', status: 'Completed' },
+{ id: 2, title: 'Book 2', status: 'Reading' },
+{ id: 3, title: 'Book 3', status: 'Wishlist' },
+{ id: 4, title: 'Book 4', status: 'Completed' },
+{ id: 5, title: 'Book 5', status: 'Reading' },
+{ id: 6, title: 'Book 6', status: 'Wishlist' },
+{ id: 7, title: 'Book 7', status: 'Completed' },
+{ id: 8, title: 'Book 8', status: 'Reading' },
+{ id: 9, title: 'Book 9', status: 'Wishlist' },
+{ id: 10, title: 'Book 10', status: 'Completed' },]
